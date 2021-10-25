@@ -9,15 +9,17 @@ import Project from './classes/Project';
  */
 class App extends React.Component {
   //Max Primary key for the todo items. This wouldn't be necessary with api/db support
-  MaxProjectID = 2;
+  MaxProjectID = 4;
   constructor(props) {
     super(props);
     //create the state object for this component. Preset with mock todo items.
     //also contains the newProject name for the add component
     this.state = {
       projects: [
-        new Project({ ProjectName: 'My New Project', ProjectID: 1, IsComplete: true }), 
-        new Project({ ProjectName: 'Project 2', ProjectID: 2, IsComplete: false })
+        new Project({ ProjectName: 'Buy Groceries', ProjectID: 1, IsComplete: true }), 
+        new Project({ ProjectName: 'Walk Dog', ProjectID: 2, IsComplete: false }),
+        new Project({ ProjectName: 'Learn React', ProjectID: 3, IsComplete: true }),
+        new Project({ ProjectName: 'Apply to New Job', ProjectID: 4, IsComplete: false })
       ],
       newProjectName: ''
     };

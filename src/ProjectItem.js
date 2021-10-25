@@ -1,5 +1,6 @@
 import './ProjectItem.css'
 import { XSquare } from 'react-bootstrap-icons';
+import React from 'react';
 /** An individual table row for a todo item
  * Inputs:
  * Project:Project The project class passed in
